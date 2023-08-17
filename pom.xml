@@ -10,6 +10,7 @@
 
     <modules>
         <module>mall-tiny</module>
+        <module>mall-tiny-generator</module>
     </modules>
 
 </project>
