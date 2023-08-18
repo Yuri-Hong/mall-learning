@@ -1,4 +1,4 @@
-package com.macro.mall.tiny.model;
+package com.macro.mall.tiny.pojo;
 
 import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;

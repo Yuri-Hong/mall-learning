@@ -1,6 +1,6 @@
 package com.macro.mall.tiny.dao;
 
-import com.macro.mall.tiny.model.UmsAdmin;
+import com.macro.mall.tiny.pojo.UmsAdmin;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package com.macro.mall.tiny.model;
+package com.macro.mall.tiny.pojo;
 
 import org.hibernate.annotations.GenericGenerator;
 import xyz.erupt.annotation.Erupt;

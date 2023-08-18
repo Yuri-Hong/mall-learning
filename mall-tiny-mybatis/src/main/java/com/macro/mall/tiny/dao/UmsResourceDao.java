@@ -1,7 +1,7 @@
 package com.macro.mall.tiny.dao;
 
 import com.macro.mall.tiny.domain.UmsResourceExt;
-import com.macro.mall.tiny.model.UmsResource;
+import com.macro.mall.tiny.pojo.UmsResource;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

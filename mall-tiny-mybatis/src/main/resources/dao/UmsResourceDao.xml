@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.macro.mall.tiny.dao.UmsResourceDao">
 
-    <resultMap id="BaseResultMap" type="com.macro.mall.tiny.model.UmsResource">
+    <resultMap id="BaseResultMap" type="com.macro.mall.tiny.pojo.UmsResource">
         <id property="id" column="id"/>
         <result property="createTime" column="create_time"/>
         <result property="name" column="name"/>
@@ -46,7 +46,7 @@
                  left join ums_resource_category urc on ur.category_id = urc.id
         where ur.id = #{id}
     </select>
-    <select id="selectListByCategoryId" resultType="com.macro.mall.tiny.model.UmsResource">
+    <select id="selectListByCategoryId" resultType="com.macro.mall.tiny.pojo.UmsResource">
         select * from ums_resource where category_id = #{categoryId}
     </select>
 </mapper>

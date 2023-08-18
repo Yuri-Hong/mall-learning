@@ -31,7 +31,7 @@
             <property name="nullCatalogMeansCurrent" value="true" />
         </jdbcConnection>
         <!--指定生成model的路径-->
-        <javaModelGenerator targetPackage="com.macro.mall.tiny.model" targetProject="mall-tiny-mybatis\src\main\java"/>
+        <javaModelGenerator targetPackage="com.macro.mall.tiny.pojo" targetProject="mall-tiny-mybatis\src\main\java"/>
 <!--        &lt;!&ndash;指定生成mapper.xml的路径&ndash;&gt;-->
 <!--        <sqlMapGenerator targetPackage="com.macro.mall.tiny.mbg.mapper" targetProject="mall-tiny-mybatis\src\main\resources"/>-->
 <!--        &lt;!&ndash;指定生成mapper接口的的路径&ndash;&gt;-->

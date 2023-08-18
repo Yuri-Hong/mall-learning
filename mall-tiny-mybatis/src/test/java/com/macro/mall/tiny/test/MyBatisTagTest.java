@@ -2,7 +2,7 @@ package com.macro.mall.tiny.test;
 
 import cn.hutool.core.util.RandomUtil;
 import com.macro.mall.tiny.dao.UmsAdminDao;
-import com.macro.mall.tiny.model.UmsAdmin;
+import com.macro.mall.tiny.pojo.UmsAdmin;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

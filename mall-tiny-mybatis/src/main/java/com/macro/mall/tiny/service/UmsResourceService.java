@@ -1,7 +1,7 @@
 package com.macro.mall.tiny.service;
 
 import com.github.pagehelper.PageInfo;
-import com.macro.mall.tiny.model.UmsResource;
+import com.macro.mall.tiny.pojo.UmsResource;
 
 /**
  * UmsResource的Service接口

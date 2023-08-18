@@ -5,7 +5,7 @@ import com.macro.mall.tiny.dao.UmsResourceCategoryDao;
 import com.macro.mall.tiny.dao.UmsResourceDao;
 import com.macro.mall.tiny.domain.UmsResourceCategoryExt;
 import com.macro.mall.tiny.domain.UmsResourceExt;
-import com.macro.mall.tiny.model.UmsResource;
+import com.macro.mall.tiny.pojo.UmsResource;
 import com.macro.mall.tiny.service.UmsResourceService;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;

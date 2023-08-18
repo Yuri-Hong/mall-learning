@@ -1,7 +1,7 @@
 package com.macro.mall.tiny.domain;
 
-import com.macro.mall.tiny.model.UmsResource;
-import com.macro.mall.tiny.model.UmsResourceCategory;
+import com.macro.mall.tiny.pojo.UmsResource;
+import com.macro.mall.tiny.pojo.UmsResourceCategory;
 import lombok.Data;
 
 /**

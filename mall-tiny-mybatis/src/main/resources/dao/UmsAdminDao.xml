@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.macro.mall.tiny.dao.UmsAdminDao">
-    <select id="selectByIdSimple" resultType="com.macro.mall.tiny.model.UmsAdmin">
+    <select id="selectByIdSimple" resultType="com.macro.mall.tiny.pojo.UmsAdmin">
         select * from ums_admin where id = #{id}
     </select>
 
-    <select id="selectById" resultType="com.macro.mall.tiny.model.UmsAdmin">
+    <select id="selectById" resultType="com.macro.mall.tiny.pojo.UmsAdmin">
         select username,
                password,
                icon,
@@ -19,7 +19,7 @@
         where id = #{id}
     </select>
 
-    <select id="selectByIds" resultType="com.macro.mall.tiny.model.UmsAdmin">
+    <select id="selectByIds" resultType="com.macro.mall.tiny.pojo.UmsAdmin">
         select username,
                password,
                icon,
@@ -98,7 +98,7 @@
         delete from  ums_admin where id = #{id}
     </delete>
 
-    <select id="selectByUsernameAndEmailLike" resultType="com.macro.mall.tiny.model.UmsAdmin">
+    <select id="selectByUsernameAndEmailLike" resultType="com.macro.mall.tiny.pojo.UmsAdmin">
         select username,
                password,
                icon,
@@ -118,7 +118,7 @@
         </if>
     </select>
 
-    <select id="selectByUsernameAndEmailLike2" resultType="com.macro.mall.tiny.model.UmsAdmin">
+    <select id="selectByUsernameAndEmailLike2" resultType="com.macro.mall.tiny.pojo.UmsAdmin">
         select username,
         password,
         icon,
@@ -142,7 +142,7 @@
             </otherwise>
         </choose>
     </select>
-    <select id="selectByUsernameAndEmailLike3" resultType="com.macro.mall.tiny.model.UmsAdmin">
+    <select id="selectByUsernameAndEmailLike3" resultType="com.macro.mall.tiny.pojo.UmsAdmin">
         select username,
         password,
         icon,

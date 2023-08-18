@@ -3,7 +3,7 @@ package com.macro.mall.tiny.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.macro.mall.tiny.dao.UmsResourceDao;
-import com.macro.mall.tiny.model.UmsResource;
+import com.macro.mall.tiny.pojo.UmsResource;
 import com.macro.mall.tiny.service.UmsResourceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
