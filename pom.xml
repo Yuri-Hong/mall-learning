@@ -10,7 +10,7 @@
 
     <modules>
         <module>mall-tiny</module>
-        <module>mall-tiny-generator</module>
+        <module>mall-tiny-mybatis-plus</module>
     </modules>
 
 </project>
