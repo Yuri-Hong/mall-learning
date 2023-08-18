@@ -43,7 +43,6 @@
 - 生成有指定注解的类的API文档
 - 生成有指定注解的方法的API文档
 
-
 ```java
 package com.macro.mall.tiny.config;
 

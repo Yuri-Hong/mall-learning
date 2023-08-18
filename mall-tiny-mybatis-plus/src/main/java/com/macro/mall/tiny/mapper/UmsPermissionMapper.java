@@ -1,17 +1,17 @@
 package com.macro.mall.tiny.mapper;
 
-import com.macro.mall.tiny.pojo.UmsRole;
+import com.macro.mall.tiny.pojo.UmsPermission;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.mybatis.spring.annotation.MapperScan;
 
 /**
  * <p>
- * 后台用户角色表 Mapper 接口
+ * 后台用户权限表 Mapper 接口
  * </p>
  *
  * @author yuri
  * @since 2023-08-18
  */
-public interface UmsRoleMapper extends BaseMapper<UmsRole> {
+public interface UmsPermissionMapper extends BaseMapper<UmsPermission> {
 
 }

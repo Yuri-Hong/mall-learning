@@ -55,9 +55,5 @@ public class UmsRole implements Serializable {
     @TableField("sort")
     private Integer sort;
 
-    @ApiModelProperty(value = "测试")
-    @TableField("test1")
-    private String test1;
-
 
 }

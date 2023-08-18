@@ -371,6 +371,7 @@ public class EsProductServiceImpl implements EsProductService {
 ```
 
 ### 添加EsProductController定义接口
+
 ```java
 package com.macro.mall.tiny.controller;
 

@@ -2,7 +2,6 @@ package com.macro.mall.tiny.mapper;
 
 import com.macro.mall.tiny.pojo.UmsRole;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.mybatis.spring.annotation.MapperScan;
 
 /**
  * <p>

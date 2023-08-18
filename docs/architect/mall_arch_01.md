@@ -335,6 +335,7 @@ public class PmsBrandController {
 
 ```
 ### 添加Service接口
+
 ```java
 package com.macro.mall.tiny.service;
 
@@ -363,6 +364,7 @@ public interface PmsBrandService {
 
 ```
 ### 实现Service接口
+
 ```java
 package com.macro.mall.tiny.service.impl;
 

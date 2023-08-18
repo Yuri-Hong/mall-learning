@@ -11,12 +11,11 @@
         <result column="create_time" property="createTime" />
         <result column="status" property="status" />
         <result column="sort" property="sort" />
-        <result column="test1" property="test1" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, name, description, admin_count, create_time, status, sort, test1
+        id, name, description, admin_count, create_time, status, sort
     </sql>
 
 </mapper>

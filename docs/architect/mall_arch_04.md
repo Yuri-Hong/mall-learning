@@ -89,7 +89,6 @@ eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZWQiOjE1NTY3NzkxMjUzMDksImV4cCI
 - getUserNameFromToken(String token)：从token中获取登录用户的信息
 - validateToken(String token, UserDetails userDetails)：判断token是否还有效
 
-
 ```java
 package com.macro.mall.tiny.common.utils;
 
@@ -359,6 +358,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 - JwtAuthenticationTokenFilter：在用户名和密码校验前添加的过滤器，如果有jwt的token，会自行根据token信息进行登录。
 
 ### 添加RestfulAccessDeniedHandler
+
 ```java
 package com.macro.mall.tiny.component;
 
@@ -392,6 +392,7 @@ public class RestfulAccessDeniedHandler implements AccessDeniedHandler{
 
 ```
 ### 添加RestAuthenticationEntryPoint
+
 ```java
 package com.macro.mall.tiny.component;
 
@@ -423,6 +424,7 @@ public class RestAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
 ```
 ### 添加AdminUserDetails
+
 ```java
 package com.macro.mall.tiny.dto;
 

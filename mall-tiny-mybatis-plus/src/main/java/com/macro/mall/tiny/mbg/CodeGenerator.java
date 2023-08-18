@@ -1,6 +1,5 @@
 package com.macro.mall.tiny.mbg;
 
-import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
@@ -47,9 +46,11 @@ public class CodeGenerator {
 // 全局配置
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir(projectPath + "/mall-tiny-mybatis-plus/src/main/java");
+        gc.setOutputDir(projectPath+"/mall-tiny-mybatis-plus/src/main/java");
         //作者
         gc.setAuthor("yuri");
+        gc.setFileOverride(true);
+        gc.setEnableCache(false);
 //打开输出目录
         gc.setOpen(false);
 //xml开启 BaseResultMap
@@ -57,7 +58,8 @@ public class CodeGenerator {
         //xml 开启BaseColumnList
         gc.setBaseColumnList(true);
         // 实体属性 Swagger2 注解
-        gc.setSwagger2(true); mpg.setGlobalConfig(gc);
+        gc.setSwagger2(true);
+        mpg.setGlobalConfig(gc);
 // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
         dsc.setUrl("jdbc:mysql://localhost:3306/mall_tiny?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai");
@@ -90,7 +92,7 @@ public class CodeGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会
-                return projectPath + "/mall-tiny-mybatis-plus/src/main/resources/mapper/"
+                return  projectPath+"/mall-tiny-mybatis-plus/src/main/resources/mapper/"
                         + tableInfo.getEntityName() + "Mapper"
                         + StringPool.DOT_XML;
             }
@@ -108,12 +110,16 @@ public class CodeGenerator {
         strategy.setEntityLombokModel(true);
 //生成 @RestController 控制器
         strategy.setRestControllerStyle(true);
-        strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
+        String[] tables = new String[]{
+                "ums_role","ums_permission"};
+        strategy.setInclude(tables);
+//        strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
         strategy.setControllerMappingHyphenStyle(true);
-//        strategy.setEntityTableFieldAnnotationEnable(true);
+        strategy.setEntityTableFieldAnnotationEnable(true);
 //表前缀
 //        strategy.setTablePrefix("t_");
-//        strategy.setEntityBuilderModel(true);
+        strategy.setEntityBuilderModel(true);
+//        strategy.setSuperEntityColumns("id");
         mpg.setStrategy(strategy);
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
         mpg.execute();

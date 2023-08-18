@@ -14,7 +14,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 后台用户角色表
+ * 后台用户权限表
  * </p>
  *
  * @author yuri
@@ -23,41 +23,50 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("ums_role")
-@ApiModel(value="UmsRole对象", description="后台用户角色表")
-public class UmsRole implements Serializable {
+@TableName("ums_permission")
+@ApiModel(value="UmsPermission对象", description="后台用户权限表")
+public class UmsPermission implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
+    @ApiModelProperty(value = "父级权限id")
+    @TableField("pid")
+    private Long pid;
+
     @ApiModelProperty(value = "名称")
     @TableField("name")
     private String name;
 
-    @ApiModelProperty(value = "描述")
-    @TableField("description")
-    private String description;
+    @ApiModelProperty(value = "权限值")
+    @TableField("value")
+    private String value;
 
-    @ApiModelProperty(value = "后台用户数量")
-    @TableField("admin_count")
-    private Integer adminCount;
+    @ApiModelProperty(value = "图标")
+    @TableField("icon")
+    private String icon;
+
+    @ApiModelProperty(value = "权限类型：0->目录；1->菜单；2->按钮（接口绑定权限）")
+    @TableField("type")
+    private Integer type;
+
+    @ApiModelProperty(value = "前端资源路径")
+    @TableField("uri")
+    private String uri;
+
+    @ApiModelProperty(value = "启用状态；0->禁用；1->启用")
+    @TableField("status")
+    private Integer status;
 
     @ApiModelProperty(value = "创建时间")
     @TableField("create_time")
     private LocalDateTime createTime;
 
-    @ApiModelProperty(value = "启用状态：0->禁用；1->启用")
-    @TableField("status")
-    private Integer status;
-
+    @ApiModelProperty(value = "排序")
     @TableField("sort")
     private Integer sort;
-
-    @ApiModelProperty(value = "测试")
-    @TableField("test1")
-    private String test1;
 
 
 }

@@ -23,9 +23,9 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("ums_role")
+@TableName("User")
 @ApiModel(value="UmsRole对象", description="后台用户角色表")
-public class UmsRole implements Serializable {
+public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
