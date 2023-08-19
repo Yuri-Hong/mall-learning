@@ -10,7 +10,7 @@
 
     <modules>
         <module>mall-tiny</module>
-        <module>mall-tiny-mybatis-plus</module>
+        <module>mall-tiny-swagger2</module>
     </modules>
 
 </project>
