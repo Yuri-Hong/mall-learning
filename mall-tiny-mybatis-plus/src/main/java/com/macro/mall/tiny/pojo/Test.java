@@ -33,9 +33,9 @@ public class Test implements Serializable {
     @Column(name = "",comment = "名称",isNull = false)
     private String name;
 
-    @TableField(value = "sex")
-    @Column(name = "",comment = "性别",isNull = false)
     private String sex;
+
+    @TableField(value = "pwd")
     private String pwd;
     @TableField(value = "email")
     @Column(name = "",comment = "邮件",isNull = false)
